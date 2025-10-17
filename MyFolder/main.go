@@ -25,4 +25,10 @@ func main() {
 	var d bool
 
 	fmt.Println(a, b, c, d)
+
+	// Area cuadrado
+	const baseCuadrado = 10
+	areaCuadrado := baseCuadrado * baseCuadrado
+
+	fmt.Println("Area Cuadrado : ", areaCuadrado)
 }
