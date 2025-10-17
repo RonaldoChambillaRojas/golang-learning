@@ -17,4 +17,12 @@ func main() {
 	var otra = 2
 
 	fmt.Println(base, altura, area, otra)
+
+	// Zero Values
+	var a int
+	var b float64
+	var c string
+	var d bool
+
+	fmt.Println(a, b, c, d)
 }
