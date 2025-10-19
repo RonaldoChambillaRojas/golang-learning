@@ -13,8 +13,16 @@ func tripleArgument(a string, b, c int) {
 	fmt.Println(a, b, c)
 }
 
+// ! HOJO: Es obligatorio decirle a go el tipo de dato de retorno.
+// * Forma para retornar un solo valor.
 func returnValue(a int) int {
 	return a * 2
+}
+
+// ? CONFIRMAR: Aqui el profesor especifico el tipo de salida de esta manera: (b, c int)
+// ? pero le puse asi y funcina igual.
+func dobleReturn(a int) (int, int) {
+	return a, a * 2
 }
 
 func main() {
@@ -22,4 +30,6 @@ func main() {
 	tripleArgument("numeros: ", 2, 3)
 	value := returnValue(5)
 	fmt.Println(value)
+	value1, value2 := dobleReturn(10)
+	fmt.Println("value1:", value1, "value2:", value2)
 }
