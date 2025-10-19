@@ -41,7 +41,7 @@ func main() {
 	// * COMVERTIR TEXTO A NUMERO:
 
 	value, err := strconv.Atoi("texto")
-	// if err {    // ? HOJO: no podemos validar de esta forma si existe o no el error
+	// if err {    // ? OJO: no podemos validar de esta forma si existe o no el error
 	// 	log.Fatal(err)
 	// }
 
