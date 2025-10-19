@@ -30,6 +30,9 @@ func main() {
 	tripleArgument("numeros: ", 2, 3)
 	value := returnValue(5)
 	fmt.Println(value)
-	value1, value2 := dobleReturn(10)
-	fmt.Println("value1:", value1, "value2:", value2)
+	// value1, value2 := dobleReturn(10) // * HOJO: esta forma es para usar ambos retornos
+	// fmt.Println("value1:", value1, "value2:", value2)
+
+	value1, _ := dobleReturn(10)   // * HOJO: esta forma es para descartar algun retorno
+	fmt.Println("value1:", value1) // * HOJO: aqui ya no podemos usar _ para represar un valor de retorno.
 }
