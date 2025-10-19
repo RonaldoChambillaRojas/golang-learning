@@ -13,7 +13,12 @@ func tripleArgument(a string, b, c int) {
 	fmt.Println(a, b, c)
 }
 
+func returnValue(a int) int {
+	return a * 2
+}
+
 func main() {
 	normalFunction("Hola mundo")
 	tripleArgument("numeros: ", 2, 3)
+	fmt.Println(returnValue(2))
 }
