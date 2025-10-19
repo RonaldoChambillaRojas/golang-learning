@@ -1,6 +1,10 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"log"
+	"strconv"
+)
 
 func main() {
 	valor1 := 2
@@ -33,5 +37,26 @@ func main() {
 	} else {
 		fmt.Println("OR: ambos valores no cumplen la condicion")
 	}
+
+	// * COMVERTIR TEXTO A NUMERO:
+
+	value, err := strconv.Atoi("texto")
+	// if err {    // ? HOJO: no podemos validar de esta forma si existe o no el error
+	// 	log.Fatal(err)
+	// }
+
+	if err != nil {
+		log.Fatal(err) // ? ACLARAR: este log.Fatal como funciona? veo que para la ejecucion y lansa un error. fmt no puede hacer lo mismo?
+	}
+	// * err:
+	/*
+		No es: 1
+		AND: uno o ambos valores no cumplen la condicion
+		OR: uno o ambos valores cumplen la condicion
+		2025/10/19 13:37:47 strconv.Atoi: parsing "texto": invalid syntax
+		exit status 1
+	*/
+
+	fmt.Println("Value:", value)
 
 }
