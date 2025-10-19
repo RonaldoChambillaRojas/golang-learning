@@ -30,4 +30,11 @@ func main() {
 	// 	fmt.Println(counterForever)
 	// 	counterForever++
 	// }
+
+	// * BUCLE: for range
+
+	listaNumerosPares := []int{2, 4, 6, 8, 10, 12, 14, 16, 18, 20} // * HOJO: este es un tipo de dato Slice : lo mas similar a los arrays en js
+	for indice, numPar := range listaNumerosPares {
+		fmt.Printf("posicion %d número par: %d \n", indice, numPar)
+	}
 }
