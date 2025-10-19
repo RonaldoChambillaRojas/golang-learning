@@ -20,5 +20,6 @@ func returnValue(a int) int {
 func main() {
 	normalFunction("Hola mundo")
 	tripleArgument("numeros: ", 2, 3)
-	fmt.Println(returnValue(2))
+	value := returnValue(5)
+	fmt.Println(value)
 }
