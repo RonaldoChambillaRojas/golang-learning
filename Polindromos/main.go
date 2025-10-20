@@ -24,7 +24,7 @@ func isPalindromo(texto string) {
 		textRevese += string(textoMin[i])
 	}
 
-	if texto == textRevese {
+	if textoMin == textRevese {
 		fmt.Println("Es palindromo")
 	} else {
 		fmt.Println("No es un palindromo")
